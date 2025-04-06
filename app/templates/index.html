@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Video Caption Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Video Caption Generator</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="video" accept="video/mp4" required>
-        <button type="submit">Generate Captions</button>
-    </form>
+    <div class="container">
+        <h1>🎬 Video Caption Generator</h1>
+        <form id="uploadForm" action="/generate" method="post" enctype="multipart/form-data">
+            <label for="transcript">Transcript File (.doc / .docx)</label>
+            <input type="file" name="transcript" id="transcript" accept=".docx,.doc" required>
+
+            <label for="media">Video/Audio File (.mp4 / .mp3 / .mpv)</label>
+            <input type="file" name="media" id="media" accept=".mp4,.mp3,.mpv" required>
+
+            <button type="submit">Generate Captions</button>
+        </form>
+
+        <div class="loader" id="loader"></div>
+        <div class="success" id="success">
+            ✅ Captions generated successfully!
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('uploadForm');
+        const loader = document.getElementById('loader');
+        const success = document.getElementById('success');
+
+        form.addEventListener('submit', () => {
+            loader.style.display = 'block';
+            success.style.display = 'none';
+        });
+
+        window.onload = () => {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('status') === 'success') {
+                loader.style.display = 'none';
+                success.style.display = 'block';
+            }
+        };
+    </script>
 </body>
 </html>
+
