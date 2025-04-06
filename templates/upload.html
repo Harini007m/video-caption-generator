@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video & Transcript</title>
+</head>
+<body>
+    <h1>Upload Video & Transcript</h1>
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+        <label for="transcript">Transcript (DOC or DOCX):</label>
+        <input type="file" name="transcript" id="transcript" accept=".docx,.doc" required><br><br>
+
+        <label for="media">Video (MP4, MPV, MP3):</label>
+        <input type="file" name="media" id="media" accept=".mp4,.mpv,.mp3" required><br><br>
+
+        <button type="submit">Generate SRT</button>
+    </form>
+
+    {% if status == 'success' %}
+        <h2>✅ Subtitle file generated successfully!</h2>
+    {% endif %}
+</body>
+</html>
