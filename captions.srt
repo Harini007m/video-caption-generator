@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:05,000
+Hey there, I wanted to show you a new feature which is cache
+holdings in manual portfolios.
+
+2
+00:00:05,000 --> 00:00:10,000
+You can now add a theoretical cache value in your manual
+portfolio, which is helpful to
+
+3
+00:00:10,000 --> 00:00:14,000
+more closely illustrate the balance of your manual portfolio.
+
+4
+00:00:14,000 --> 00:00:18,000
+This cache balance will be displayed and added to your all
+holdings in all portfolio
+
+5
+00:00:18,000 --> 00:00:20,000
+balances too.
+
+6
+00:00:20,000 --> 00:00:24,000
+So to add a cache balance, what we want to do is click on edit
+portfolio, and then we'll
+
+7
+00:00:24,000 --> 00:00:27,000
+click at the bottom, edit lots.
+
+8
+00:00:27,000 --> 00:00:33,000
+And at the bottom of this edit lots worksheet, there is a box to
+add cache balance in portfolio.
+
+9
+00:00:33,000 --> 00:00:37,000
+I'm going to go ahead and add a value and hit save.
+
+10
+00:00:37,000 --> 00:00:42,000
+And once I hit save, you can see that the cache value is at the
+bottom of my holdings tab,
+
+11
+00:00:42,000 --> 00:00:47,000
+and it even calculates the weight of the cache in my portfolio
+too.
+
+12
+00:00:47,000 --> 00:00:51,000
+So the weight is updated as well as the overall balance of my
+portfolio to reflect the cache
+
+13
+00:00:51,000 --> 00:00:53,000
+that I entered.
+
+14
+00:00:53,000 --> 00:00:58,000
+And as I said, this balance will also be added to your all
+portfolios in all holdings pages.
+
+15
+00:00:58,000 --> 00:01:03,000
+So if we go to all holdings, we'll see all of our portfolios in
+the holdings on one page.
+
+16
+00:01:03,000 --> 00:01:08,000
+If we scroll down to the bottom, we'll see cache, and if we
+expand the row, we'll see
+
+17
+00:01:08,000 --> 00:01:13,000
+that there's cache in my income portfolio and my second
+portfolio, and the corresponding
+
+18
+00:01:13,000 --> 00:01:19,000
+weights to each one of those cache balances with my overall
+weights of all my holdings.
+
+19
+00:01:19,000 --> 00:01:24,000
+I can also update the cache in my portfolio when I'm adding new
+tickers to my portfolio.
+
+20
+00:01:24,000 --> 00:01:33,000
+So if I also click on the add symbol button and I find a ticker
+and I hit next, I'll
+
+21
+00:01:33,000 --> 00:01:38,000
+be able to add in a number of shares, a date of purchase, and a
+cost for the new ticker
+
+22
+00:01:38,000 --> 00:01:44,000
+in my portfolio, which I'll do.
+
+23
+00:01:44,000 --> 00:01:50,000
+And I can edit the cache balance on this modal as well and hit
+save, and my cache
+
+24
+00:01:50,000 --> 00:01:53,000
+balance will be updated there as well.
+
+25
+00:01:53,000 --> 00:01:58,000
+So this is a new feature which is cache holdings in manual
+portfolios that lets you add a
+
+26
+00:01:58,000 --> 00:02:02,000
+theoretical cache value to more closely illustrate the balance of
+your manual portfolios.
+
+27
+00:02:02,000 --> 00:02:03,000
+Thanks so much.
+
