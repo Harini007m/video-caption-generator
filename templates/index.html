@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <title>Video Caption Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>🎬 Video Caption Generator</h1>
+        <p class="tagline">Turn your transcript into perfectly timed captions.</p>
         <form id="uploadForm" action="/generate" method="post" enctype="multipart/form-data">
-            <label for="transcript">Transcript File (.doc / .docx)</label>
+            <label for="transcript">📄 Transcript File (.doc / .docx)</label>
             <input type="file" name="transcript" id="transcript" accept=".docx,.doc" required>
 
-            <label for="media">Video/Audio File (.mp4 / .mp3 / .mpv)</label>
+            <label for="media">🎥 Video/Audio File (.mp4 / .mp3 / .mpv)</label>
             <input type="file" name="media" id="media" accept=".mp4,.mp3,.mpv" required>
 
-            <button type="submit">Generate Captions</button>
+            <button type="submit">🚀 Generate Captions</button>
         </form>
 
         <div class="loader" id="loader"></div>
         <div class="success" id="success">
-            ✅ Captions generated successfully!
+            ✅ Captions generated successfully!<br><br>
+            <a href="/" class="home-link">⬅ Generate Another</a>
         </div>
     </div>
 

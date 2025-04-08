@@ -18,7 +18,11 @@
     </form>
 
     {% if status == 'success' %}
-        <h2>✅ Subtitle file generated successfully!</h2>
+        <h2>✅ Captions generated successfully!</h2>
+        {% if filename %}
+            <a href="{{ url_for('static', filename='output/' + filename) }}" download>⬇️ Download Captions</a><br><br>
+        {% endif %}
+        <a href="/">⬅ Generate Another</a>
     {% endif %}
 </body>
 </html>
