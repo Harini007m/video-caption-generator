@@ -3,6 +3,7 @@ body {
     background: linear-gradient(to right, #eef2f3, #f9f9f9);
     margin: 0;
     padding: 0;
+    transition: background 0.4s ease;
 }
 
 .container {
@@ -90,22 +91,14 @@ button:hover {
 }
 
 .success {
-    display: none;
+    display: block;
     margin-top: 30px;
     color: #22c55e;
     font-weight: bold;
     font-size: 1.1rem;
+    transition: opacity 0.4s ease-in-out;
 }
 
-.home-link {
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    color: #2563eb;
-    font-weight: 500;
-}
-
-/* ✅ NEW DOWNLOAD BUTTON STYLE */
 .download-btn {
     display: inline-block;
     margin-top: 10px;
@@ -120,4 +113,36 @@ button:hover {
 
 .download-btn:hover {
     background-color: #15803d;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #f0f4f8;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #1e293b;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    background-color: #f8fafc;
+    margin-top: 60px;
 }

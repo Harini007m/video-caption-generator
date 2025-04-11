@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Video Caption Generator</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>🎬 Video Caption Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output/styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+
+    <!-- Header -->
+    <header class="header">
         <h1>🎬 Video Caption Generator</h1>
-        <p class="tagline">Turn your transcript into perfectly timed captions.</p>
+        <p class="tagline">Turn your transcripts into perfectly synced subtitles.</p>
+    </header>
+
+    <!-- Main Form Container -->
+    <div class="container">
         <form id="uploadForm" action="/generate" method="post" enctype="multipart/form-data">
             <label for="transcript">📄 Transcript File (.doc / .docx)</label>
             <input type="file" name="transcript" id="transcript" accept=".docx,.doc" required>
@@ -20,12 +26,23 @@
             <button type="submit">🚀 Generate Captions</button>
         </form>
 
+        <!-- Loader -->
         <div class="loader" id="loader"></div>
+
+        <!-- Success Message -->
+        {% if status == 'success' and filename %}
         <div class="success" id="success">
             ✅ Captions generated successfully!<br><br>
+            <a href="{{ url_for('static', filename='output/' + filename) }}" download class="download-btn">⬇️ Download Captions</a><br><br>
             <a href="/" class="home-link">⬅ Generate Another</a>
         </div>
+        {% endif %}
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Made with ❤️ by Your Name | © 2025
+    </footer>
 
     <script>
         const form = document.getElementById('uploadForm');
@@ -34,17 +51,16 @@
 
         form.addEventListener('submit', () => {
             loader.style.display = 'block';
-            success.style.display = 'none';
+            if (success) success.style.display = 'none';
         });
 
         window.onload = () => {
             const params = new URLSearchParams(window.location.search);
             if (params.get('status') === 'success') {
                 loader.style.display = 'none';
-                success.style.display = 'block';
+                if (success) success.style.display = 'block';
             }
         };
     </script>
 </body>
 </html>
-
